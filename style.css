@@ -1,0 +1,318 @@
+/* Common Css Start */
+*{ 
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+html,body{
+    scroll-behavior: smooth;
+}
+body{
+
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+
+    font-weight: 800;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+ }
+ .sec_info h2{
+    font-size: 46px;
+    color:#02918c;
+ }
+ .sec_info p{
+    font-size: 16px;
+    color:#7e8287;
+    line-height: 41px;
+    margin: 0 auto;
+ }
+ .sec_info p span{
+    font-size: 23px;
+    font-weight: 800;
+ }
+/* Common Css End */
+
+/* Nav Section Css Start */
+nav{
+    background-color: #02918c;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+nav .row{
+
+    align-items: center;
+}
+nav .logo{
+    width: 20%;
+}
+nav .logo img{
+    display: block;
+}
+nav .menu{
+    width: 80%;
+}
+nav .menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+nav .menu ul li a{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 22px 25px;
+    transition: all .4s linear;
+}
+nav .menu ul li:hover a{
+    color: #cfc91d;
+}
+/* Nav Section Css Start */
+/* Banner Section Css Start */
+
+#banner{
+    background-image: url(img/banner.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+#banner::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.5;
+}
+#banner .container,
+#banner .container .row{
+    height: 100%;
+}
+#banner .row{
+    align-items: center;
+}
+#banner .banner-content{
+    text-align: center;
+    color:#fff;
+}
+#banner .banner-content h4{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner-content h1{
+    font-size: 68px;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner .banner-content p{
+    font-size: 18px;
+}
+#banner .banner-content img{
+    display: block;
+    margin: 52px auto;
+}
+#banner .banner-content a{
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #0b1016;
+    background-color: #cfc91d;
+    padding: 14px 42px;
+    cursor: pointer;    
+
+    
+}
+#banner .banner-content a:hover{
+    background-image: linear-gradient(to left,#12c2e9,#c471ed,#f64f59)
+}
+/* Banner Section Css End */
+/* About Section Css Start */
+#about{
+    padding: 90px 0;
+ }
+ #about .sec_info p{
+    width: 874px;
+ }
+ #about .about_item_container{
+    margin-top: 75px;
+ }
+ #about .about_item{
+    width: 25%;
+    color:#7e8287;
+    border-right: 1px solid #d9dbdb;
+    padding: 37px 65px;
+ }
+ #about .about_item:last-child{
+    border-right-color: transparent;
+ }
+ #about .about_item h5{
+    font-size: 16px;
+    margin: 20px 0;
+ }
+ #about .about_item p{
+    font-size: 11px;
+    line-height: 21px;
+ }
+ /* //About Section Css End */
+ /* Service Section Css Start */
+#service{
+    padding: 65px 0;
+    background-image: url(./img/service.bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #7e8287;
+ }
+ #service .service_content{
+    width: 50%;
+ }
+ #service .service_item{
+    width: 50%;
+ }
+ #service .service_item img {
+     padding-top: 60px;
+     padding-bottom: 20px;
+ }
+ /* //Service Section Css End */
+ /* My Work Section Css Start */
+ #myWork .sec_info h2 {
+     padding-top: 3.92cm;
+     padding-bottom: 1.20cm;
+ }
+#myWork .sec_info  p{
+    width: 100%;
+
+
+    
+ }
+ #myWork .sec_info .p-1 p{
+    padding-bottom: 1.90cm;
+ }
+ #myWork .myWork_item{
+    width: 25%;
+    position: relative;
+ }
+ #myWork .myWork_item img{
+    width: 100%;
+    display: block;
+ }
+ #myWork .myWork_item .overlay{
+    position: absolute;
+    color: #fff;
+    background-color:rgba(2,145,140,0.85);
+    top: 28px;
+    right: 28px;
+    bottom: 28px;
+    left: 28px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s linear;
+ }
+ #myWork .myWork_item:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+ }
+ /* //My Work Section Css End */
+ /* contact Section Css Start */
+ #contact .sec_info h2 {
+     padding-top: 3.53cm;
+     
+ }
+ #contact .contact_form {
+     background-color: #0b0b0b;
+     padding: 50px;
+ }
+ #contact .sec_info .p-1 p{
+     padding-bottom: 2.61cm;
+ }
+ #contact .contact_form input,
+ #contact .contact_form textarea {
+     display: block;
+     background: none;
+     margin: auto;
+     width: 640px;
+     border: none;
+     border-bottom: 1px solid #898989;
+     color: #7e8287;
+     
+     text-align: center;
+     margin-top: 50px;
+     padding: 18px;
+     font-size: 16px;
+ }
+ #contact .contact_form input[placeholder="subject"],
+ #contact .contact_form textarea[placeholder="MESSAGE"] {
+     width: 918px;
+
+ }
+ #contact .contact_form textarea{
+     resize: none;
+     font-family: 'Open Sans', sans-serif;
+ }
+ #contact .contact_form input::placeholder,
+ #contact .contact_form textarea::placeholder{
+     text-transform: uppercase;
+     
+ }
+ #contact .contact_form button{
+     font-size: 14px;
+     color: #0b1016;
+     background-color: #cfc91d;
+     text-transform: uppercase;
+     padding: 15px 69px;
+     border: none;
+     margin: 50px auto  0;
+     display: block;
+     cursor: pointer;
+     
+ }
+    
+ #contact .contact_form button:hover{
+    background-image: linear-gradient(to left,#02918c,#02918c,#f64f59)
+    
+
+ }
+
+ /* contact Section Css end */
+ /* footer Section Css start */
+ footer{
+     background-color: #000000;
+     color: #6c7074;
+ }
+ footer p{
+  padding-top: 1.27cm;
+     padding-bottom: 0.95cm;
+     font-size: 12px;
+     text-transform: uppercase;
+ }
+ /* footer Section Css end */
+
+ 
